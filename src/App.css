@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.item {
+  padding: 16px;
+  outline: 1px solid blue;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: monospace;
+  color: transparent;
+}
+
+.item.active {
+  color: aliceblue;
+}
+
+.item.match {
+  color: gray;
+  cursor: not-allowed;
+  outline: 0;
+}
+
+.item.blocked {
+  cursor: not-allowed;
+}
